@@ -1,0 +1,46 @@
+{
+  "name": "irembo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "npx sequelize db:migrate",
+    "seed": "npm run migrate:undo && npm run migrate && npx sequelize db:seed:all",
+    "build": "babel ./src --out-dir build",
+    "dev": "nodemon --exec babel-node -r dotenv/config  src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siyubu/irembo.git"
+  },
+  "author": "Solange Iyubu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siyubu/irembo/issues"
+  },
+  "homepage": "https://github.com/Siyubu/irembo#readme",
+  "dependencies": {
+    "connect-multiparty": "^2.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-limiter": "^1.6.1",
+    "install": "^0.13.0",
+    "npm": "^7.8.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "redis": "^3.1.0",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.1",
+    "@babel/node": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
+    "cross-env": "^7.0.3"
+  }
+}
