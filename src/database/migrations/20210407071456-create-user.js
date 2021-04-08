@@ -1,4 +1,4 @@
-'use strict';
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('Users', {
@@ -14,10 +14,16 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
-      smsWindow: {
+      DsmsWindow: {
         type: Sequelize.INTEGER
       },
-      emailWindow: {
+      DemailWindow: {
+        type: Sequelize.INTEGER
+      },
+      MsmsWindow: {
+        type: Sequelize.INTEGER
+      },
+      MemailWindow: {
         type: Sequelize.INTEGER
       },
       createdAt: {

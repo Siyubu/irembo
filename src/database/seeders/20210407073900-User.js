@@ -1,4 +1,4 @@
-'use strict';
+
 module.exports = {
   up: (queryInterface, Sequelize) => queryInterface.bulkInsert(
     'Users',
@@ -6,16 +6,20 @@ module.exports = {
       {
         name: 'Solange Iyubu',
         email: 'siyubu@exam.com',
-        smsWindow:3,
-        emailWindow:2,
+        DsmsWindow:3,
+        DemailWindow:2,
+        MsmsWindow:13,
+        MemailWindow:12,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         name: 'Irembo',
         email: 'irembo@test.com',
-        smsWindow:3,
-        emailWindow:2,
+        DsmsWindow:3,
+        DemailWindow:2,
+        MsmsWindow:13,
+        MemailWindow:12,
         createdAt: new Date(),
         updatedAt: new Date(),
       },

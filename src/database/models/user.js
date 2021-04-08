@@ -1,4 +1,4 @@
-'use strict';
+
 const {
   Model
 } = require('sequelize');
@@ -16,8 +16,10 @@ module.exports = (sequelize, DataTypes) => {
   User.init({
     name: DataTypes.STRING,
     email: DataTypes.STRING,
-    smsWindow: DataTypes.INTEGER,
-    emailWindow: DataTypes.INTEGER
+    DsmsWindow: DataTypes.INTEGER,
+    DemailWindow: DataTypes.INTEGER,
+    MsmsWindow: DataTypes.INTEGER,
+    MemailWindow: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'User',
