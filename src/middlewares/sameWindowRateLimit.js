@@ -24,7 +24,7 @@ export const sms_same_time_window = (req, res, next) => {
           requestCount: 1
         };
         newRecord.push(requestLog);
-        redisClient.set(req.user.name,WINDOW_SIZE_IN_HOURS, JSON.stringify(newRecord));
+        redisClient.set(req.user.name, JSON.stringify(newRecord));
         next();
       }
       let data = JSON.parse(record);

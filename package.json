@@ -9,7 +9,8 @@
     "migrate:undo": "npx sequelize db:migrate:undo:all",
     "seed": "npm run migrate:undo && npm run migrate && npx sequelize db:seed:all",
     "build": "babel ./src --out-dir build",
-    "dev": "nodemon --exec babel-node -r dotenv/config  src"
+    "dev": "nodemon --exec babel-node -r dotenv/config  src",
+    "start": " npm run seed && npm run build && npm run dev"
   },
   "repository": {
     "type": "git",
