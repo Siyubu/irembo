@@ -16,7 +16,7 @@ static async login(req, res) {
     res.status(200).json({
       status: 200,
       accessToken:token,
-      message: 'You are Logged in successfully',
+      message: 'You Logged in successfully',
     });
   }
   static async smsNotification(req, res) {
